@@ -2,10 +2,7 @@
 
 This repository contains the LLM Detection Proxy, a proof-of-concept tool developed at Elastic during our quarterly OnWeek session. The project is designed to integrate security practices within the lifecycle of Large Language Models (LLMs), allowing for the detection, alerting, and triage of malicious activities in LLM workflows.
 
-
-![Untitled-2024-04-09-1014](https://github.com/elastic/llm-detection-proxy/assets/1636709/aff92c30-dfe3-4b30-ad2e-4d427eb50f9a)
-
-
+![Untitled-2024-04-09-1014-2](https://github.com/elastic/llm-detection-proxy/assets/1636709/2fd6b3af-3c8c-4678-aa18-61d5606ba263)
 
 ## Installation
 
