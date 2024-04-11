@@ -1,0 +1,30 @@
+# Declare your Buildkite pipelines below
+---
+# yaml-language-server: $schema=https://gist.githubusercontent.com/elasticmachine/988b80dae436cafea07d9a4a460a011d/raw/rre.schema.json
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: buildkite-pipeline-llm-detection-proxy
+  description: Buildkite Pipeline for llm-detection-proxy
+  links:
+    - title: Pipeline
+      url: https://buildkite.com/elastic/llm-detection-proxy
+
+spec:
+  type: buildkite-pipeline
+  owner: group:security-intelligence-analytics
+  system: buildkite
+  implementation:
+    apiVersion: buildkite.elastic.dev/v1
+    kind: Pipeline
+    metadata:
+      name: llm-detection-proxy
+      description: Sample LLM proxy to intercept request and responses for analysis and enrichment.
+    spec:
+      repository: elastic/llm-detection-proxy
+      pipeline_file: ".buildkite/pipeline.yml"
+      teams:
+        security-intelligence-analytics:
+          access_level: MANAGE_BUILD_AND_READ
+        everyone:
+          access_level: READ_ONLY
