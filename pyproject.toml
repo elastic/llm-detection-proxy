@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "llm-detections"
+version = "0.1.0"
+description = "A proxy tool for detecting and logging LLM queries to Elasticsearch."
+authors = ["Mika Ayenson <Mika.ayenson@elastic.co>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+openai = "^1.16.2"
+flask = "^3.0.3"
+elasticsearch = "^8.13.0"
+llm-guard = { git = "https://github.com/protectai/llm-guard.git", branch = "main" }
+langkit = { version = "^1.0.0", extras = ["all"] }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
