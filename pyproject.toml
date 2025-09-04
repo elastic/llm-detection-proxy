@@ -12,7 +12,7 @@ openai = "^1.16.2"
 flask = "^3.0.3"
 elasticsearch = "^8.13.0"
 llm-guard = { git = "https://github.com/protectai/llm-guard.git", branch = "main" }
-langkit = { version = "^1.0.0", extras = ["all"] }
+langkit = { version = "^0.0.35", extras = ["all"] }
 
 [build-system]
 requires = ["poetry-core"]
